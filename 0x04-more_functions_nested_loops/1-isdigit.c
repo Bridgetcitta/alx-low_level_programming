@@ -15,7 +15,7 @@ int _isdigit(int c)
 
 	a = 9;
 
-	if ((c >= b || c >= a) && (c <= b || c <= a))
+	if ((c >= b && c >= a) || (c <= b && c <= a))
 
 		return (1);
 	else
