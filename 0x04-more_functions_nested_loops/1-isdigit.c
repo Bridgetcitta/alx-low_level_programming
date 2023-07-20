@@ -8,7 +8,14 @@
 
 int _isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
+	int a;
+	int b;
+
+	b = 0;
+
+	a = 9;
+
+	if ((c >= b || c >= a) && (c <= b || c <= a))
 
 		return (1);
 	else
