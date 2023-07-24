@@ -3,7 +3,7 @@
 /**
  * _strlen - returns the length of a string
  * @s: string parameter input
- * Return: Always 0
+ * Return: Always to length
  */
 
 int _strlen(char *s)
@@ -12,7 +12,8 @@ int _strlen(char *s)
 
 	while (*s != '\0')
 	{
-		_putchar(length++, s++);
+		length++;
+		s++
 	}
-	return (0);
+	return (length);
 }
