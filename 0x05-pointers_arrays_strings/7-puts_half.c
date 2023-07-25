@@ -2,7 +2,6 @@
 #include <string.h>
 /**
  * puts_half - prints half of a string, followed by a new line.
- * @n: length of string
  * @str: string input
  * Return: Always 0
  */
