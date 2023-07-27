@@ -5,6 +5,7 @@
  * @n: bytes from src
  * @src: source string
  * @dest: destination string
+ * Return: a pointer to the resulting string dest
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -16,9 +17,10 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[i])
 		i++;
 
-	for (a = 0; a < n &&  src[a] != '\0'; a++)
+	for (a = 0; a < n && src[a] != '\0'; a++)
 		dest[i + a] = src[a];
 	dest[i + a] = '\0';
 
 	return (dest);
+
 }
