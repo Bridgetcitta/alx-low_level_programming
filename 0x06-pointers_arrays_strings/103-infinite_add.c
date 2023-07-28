@@ -18,9 +18,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	int i, j;
 
 	if (len1 + 1 > size_r || len2 + 1 > size_r)
-	{
-		return (0);
-	}
+
 	for (i = len1 - 1, j = len2 - 1; i >= 0 || j >= 0 || carry; i--, j--)
 	{
 		int digit1 = i >= 0 ? n1[i] - '0' : 0;
@@ -34,7 +32,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	for (i = 0, j = strlen(r) - 1; i < j; i++, j--)
 	{
 		char temp = r[i];
-	r[i] = r[j];
+
+		r[i] = r[j];
 		r[j] = temp;
 	}
 	return (r);
