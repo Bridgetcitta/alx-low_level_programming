@@ -15,7 +15,7 @@ char *leet(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; leet_chars[j] != '\0'; j++)
-
+		{
 			if (s[i] == leet_chars[j])
 			{
 				s[i] = leet_nums[j / 2];
@@ -23,6 +23,5 @@ char *leet(char *s)
 			}
 		}
 	}
-
 	return (s);
 }
