@@ -8,21 +8,24 @@
 
 char *leet(char *s)
 {
-	char *leet_chars = "AEGOTLaegotl";
-	char *leet_nums = "43671";
-	int i, j;
+	int i, a = 0;
+	int sl[] = {97, 101, 111, 116, 108};
+	int ul[] = {65, 69, 79, 84, 76};
+	int n[] = {52, 51, 48, 55, 49};
 
-	for (i = 0; s[i] != '\0'; i++)
+
+	while (s[a] != '\0')
 	{
-		for (j = 0; leet_chars[j] != '\0'; j++)
+
+		for (i = 0; i < 5; i++)
 		{
-			if (s[i] == leet_chars[j])
+			if (s[a] == sl[i] || s[a] == ul[i])
 			{
-				s[i] = leet_nums[j / 2];
+				s[a] = n[i];
 				break;
 			}
 		}
-		i++;
+		a++;
 	}
 	return (s);
 }
