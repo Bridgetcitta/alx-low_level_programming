@@ -26,11 +26,19 @@ int sqrt_helper(int n, int low, int high)
 	int mid = (low + high) / 2;
 
 	if (mid * mid == n)
+	{
 		return (mid);
+	}
 	if (low >= high)
+	{
 		return (-1);
+	}
 	if (mid * mid > n)
-
+	{
 		return (sqrt_helper(n, low, mid - 1));
+	}
+	else
+	{
 	return (sqrt_helper(n, mid + 1, high));
+	}
 }
