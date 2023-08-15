@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - check the code
+ * Return: success
+ */
 int main(void)
 {
 
