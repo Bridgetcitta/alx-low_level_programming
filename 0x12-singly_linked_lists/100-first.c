@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void preMainPrint(void);
+void preMainPrint(void)__attribute__((constructor));
 /**
- * preMainPrint - prints a sentence before the main 
+ * preMainPrint - prints a sentence before the main
  * function is executed
  */
 
