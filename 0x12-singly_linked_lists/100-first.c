@@ -1,16 +1,14 @@
 #include <stdio.h>
 
-void print_message(void);
+void preMainPrint(void);
 /**
- * print_message - prints message
- * Return: 0
+ * preMainPrint - prints a sentence before the main 
+ * function is executed
  */
 
-void print_message(void)
+void preMainPrint(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
 
 }
-
-
