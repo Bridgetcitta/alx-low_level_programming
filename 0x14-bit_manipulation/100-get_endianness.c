@@ -7,7 +7,7 @@
 
 int get_endianness(void)
 {
-	int endianness = 0;
+	int endianness = 1;
 	char *n;
 
 	n = (char *)&endianness;
