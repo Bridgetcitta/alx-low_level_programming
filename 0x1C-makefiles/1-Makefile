@@ -1,0 +1,20 @@
+# Makefile for building the 'school' executable
+
+CC = gcc
+
+SRC = main.c school.c  
+
+OBJS = $(SRCS:.c=.o)
+
+EXEC = school
+
+all: $(EXEC)
+
+$(EXEC): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+clean:
+	rm -f $(OBJS) $(EXEC)
