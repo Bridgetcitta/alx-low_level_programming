@@ -1,8 +1,7 @@
-# Adding another makefile
+# Adding Make file example 2
 
 CC = gcc
-
 SRC = main.c school.c
 
 all : $(SRC)
-    $(CC) $(SRC) -o school
+	$(CC) $(SRC) -o school
